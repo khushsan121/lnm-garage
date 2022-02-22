@@ -5,12 +5,14 @@ import Register from './components/Register/Register';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import PostCard from './components/PostCard/PostCard';
+import Featured from './components/Featured/Featured';
+import AllPost from './components/AllPost/AllPost';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <PostCard />
+      <AllPost />
 
     </div>
   )

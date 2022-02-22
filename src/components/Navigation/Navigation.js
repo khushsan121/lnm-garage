@@ -6,12 +6,15 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
 import Logo from '../../assets/images/logo.png';
+import { useState } from 'react';
 import './Navigation.css';
 
 
 
 function Navigation() {
-    return (
+    let [show, setShow] = useState(false);
+    if(show){
+        return (
    <div >
         <Navbar className='bg-dark-blue sticky-top'   >
         <Container >
@@ -37,7 +40,9 @@ function Navigation() {
                 <NavDropdown.Item href="#action/3.2">Post An Ad</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Your ADs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4" >Sign Out</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4"onClick={()=>{
+                    setShow(!show);
+                }} >Sign Out</NavDropdown.Item>
             </NavDropdown>
         </Navbar.Collapse>
         </Container>
@@ -45,5 +50,32 @@ function Navigation() {
    </div>
   
     );
+    }
+    else
+    {
+        return (
+            <div >
+                 <Navbar className='bg-dark-blue sticky-top'   >
+                 <Container >
+                     <Navbar.Brand  className='f2 text-white grow'href="#home">
+                         <img src={Logo} alt="logo" className='h3' />
+                     </Navbar.Brand>
+                     <Navbar.Toggle />
+                     <Navbar.Collapse className="justify-content-end">    
+                     
+                     <Navbar.Text className='text-white pa2'>
+                         <Button variant="outline-success" className='green' onClick={()=>{
+                             setShow(!show);
+                         }}  >Sign In</Button>
+                         <Button variant="outline-success" className='green'>Register</Button>
+                     </Navbar.Text>
+                    
+                 </Navbar.Collapse>
+                 </Container>
+                 </Navbar>
+            </div>
+           
+             );
+    }
 }
  export default Navigation;         

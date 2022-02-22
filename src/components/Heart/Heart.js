@@ -11,12 +11,12 @@ export default function Heart() {
           display: 'block',
           width: 'fit-content'
         }}>
-          <h3>How to use HeartCheckBox in ReactJS?</h3>
+
           <FormControlLabel
             control={<Checkbox icon={<FavoriteBorder />} 
                       checkedIcon={<Favorite />}
               name="checkedH" />}
-            label="Instagram Like Button"
+            label="Add to favorites"
           />
         </div>
       );
