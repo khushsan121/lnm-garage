@@ -1,0 +1,68 @@
+.signInContainer {
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.column {
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0,0,0,0.1) 0 1px 10px;
+    padding: 20px 35px;
+    box-sizing: border-box;
+    overflow-y: auto ;
+}
+.column  {
+    display: flex;
+    flex-direction: column;
+}
+.column  input[type="text"],
+.column  input[type="email"],
+.column  input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0px;
+    border:none;
+    border-bottom: 1px solid #dedede;
+}
+.column  input[type="submit"] {
+    background-color: #4285f4;
+    color:white;
+    height:36px;
+    width:88px;
+    border:none;
+    border-radius:3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom:20px;
+    font-size: 16px;
+
+}
+.column .header {
+    padding: 20px 0;
+}
+.column h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px ;
+    color: black;
+}
+.column .header span {
+    font-size: 14pxs;
+}
+.column .header img {
+    width: 200px;
+}
+.signInMessage {
+    font-size: 14px;
+    font-weight: 400;
+}
+input:focus {
+    outline: none;
+}
