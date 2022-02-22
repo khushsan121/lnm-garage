@@ -1,8 +1,12 @@
 .display-all-parent{
   padding-top: 6em;
   padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin:0 1rem;
-  background-color: #ebeeef;
+  display: flex;
+  width: 80%;
+  float: right;
 }
 
 .container-allpost{

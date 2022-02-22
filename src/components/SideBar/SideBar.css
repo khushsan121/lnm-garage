@@ -1,0 +1,10 @@
+.sidebar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    left: 0; /* Position the navbar at the top of the page */
+    height: 100%; /* Full width */ 
+    float: left;
+    z-index: 9999;
+    opacity: 0.9;
+  }
