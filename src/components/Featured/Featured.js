@@ -4,7 +4,8 @@ import './Featured.css';
 
 function Featured() {
   return (
-    <div className='previewContainer'>  
+    <div className='previewContainer'> 
+    <div className='preview'>
       <Carousel>
         <Carousel.Item interval={1000}>
         <img
@@ -40,6 +41,7 @@ function Featured() {
         </Carousel.Caption>
     </Carousel.Item>
     </Carousel>
+    </div>
     </div>
   )
 }

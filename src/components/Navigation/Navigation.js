@@ -20,7 +20,7 @@ function Navigation({isLoggedIn, setIsLoggedIn}) {
     
     if(isLoggedIn){
         return (
-   <div  >
+   <div  className='sticky-nav'>
         <Navbar className='bg-dark-blue' sticky='top' >
         <Container >
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -61,7 +61,7 @@ function Navigation({isLoggedIn, setIsLoggedIn}) {
     else
     {
         return (
-            <div >
+            <div  className='sticky-nav'>
                  <Navbar className='bg-dark-blue' sticky='top'  >
                  <Container >
                      <Navbar.Brand  className='f2 text-white grow'href="#home">

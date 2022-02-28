@@ -8,6 +8,9 @@ import PostCard from './components/PostCard/PostCard';
 import Featured from './components/Featured/Featured';
 import AllPost from './components/AllPost/AllPost';
 import SideBar from './components/SideBar/SideBar';
+import Footer from './components/Footer/Footer';
+import Create from './components/Create/Create';
+import Profile from './components/Profile/Profile';
 import {useEffect, useState} from 'react';
 
 function App() {
@@ -20,9 +23,8 @@ function App() {
     return (
       <div className="App">
         
-          <Navigation isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
-          <SideBar />
-          <AllPost />
+          
+          <Profile />
   
 
         
@@ -35,6 +37,7 @@ function App() {
       <div className="App">
         <Navigation isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <SignIn />
+        <Footer />
       </div>
     );   
   }

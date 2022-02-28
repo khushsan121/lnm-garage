@@ -11,10 +11,23 @@ function SideBar() {
       <ProSidebar>
     <Menu iconShape="square">
     <MenuItem icon={<FaGem />}>HOME</MenuItem>
-    <SubMenu title="Components" icon={<FaHeart />}>
-      <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
+    <SubMenu title="Category" icon={<FaHeart />}>
+      <MenuItem>Mobile & Tablets</MenuItem>
+      <MenuItem>Car</MenuItem>
+      <MenuItem>Bike</MenuItem>
+      <MenuItem>Electronics</MenuItem>
+      <MenuItem>Furniture</MenuItem>
+      <MenuItem>Real Estate</MenuItem>
+      <MenuItem>Jobs</MenuItem>
+      <MenuItem>Services</MenuItem>
+      <MenuItem>Others</MenuItem>
     </SubMenu>
+    <MenuItem icon={<FaGem />}>About Us</MenuItem>
+    <MenuItem icon={<FaGem />}>Contact Us</MenuItem>
+    <MenuItem icon={<FaGem />}>FAQ</MenuItem>
+    <MenuItem icon={<FaGem />}>Advertise With Us</MenuItem>
+    <MenuItem icon={<FaGem />}>Blog</MenuItem>
+    <MenuItem icon={<FaGem />}>LNM Tapri</MenuItem>
   </Menu>
 </ProSidebar>
     </div>
