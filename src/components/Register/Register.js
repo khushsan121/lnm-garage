@@ -1,6 +1,7 @@
 import react from 'react';
 import './Register.css';
 import Logo from '../../assets/images/logo2.png';
+import { Link } from 'react-router-dom';
 
 function Register() {
   return (
@@ -29,9 +30,9 @@ function Register() {
 
                 <input type="password" name="password2" placeholder="Confirm password" required />
                 
-                <input type="submit" name="submitButton" value="SUBMIT" />
+                <input className="grow" type="submit" name="submitButton" value="SUBMIT" />
                 
-            <a href="login.php" class="signInMessage">Already have an account? Sign in here!</a>
+            <Link to='/login'>Already have an account? Sign in here!</Link>
             </div>
       </div>        
   )

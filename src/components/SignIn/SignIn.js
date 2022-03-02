@@ -1,10 +1,10 @@
 import react from 'react';
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './SignIn.css';
 import Logo from '../../assets/images/logo2.png';
 function SignIn() {
   return (
-    <div className="mystyle">
+    <div className="mystyle ">
     <div className="signInContainer">
         <div className="column">
             <div className="header">
@@ -19,10 +19,10 @@ function SignIn() {
 
                 <input type="password" name="password" placeholder="Password" required />
                 
-                <input type="submit" name="submitButton" value="SUBMIT" />
+              <Link to='/'>  <input className="grow" type="submit" name="submitButton" value="SUBMIT" /></Link>
 
             
-            {/*<Link to='./register'>Need an account? Sign up here!</Link>*/}
+            <Link to='/signup'>Need an account? Sign up here!</Link>
 
         </div>
     </div>

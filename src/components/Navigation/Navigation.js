@@ -8,6 +8,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Logo from '../../assets/images/logo.png';
 import { useState } from 'react';
 import './Navigation.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -24,8 +25,8 @@ function Navigation({isLoggedIn, setIsLoggedIn}) {
         <Navbar className='bg-dark-blue' sticky='top' >
         <Container >
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
-            <Navbar.Brand  className='f2 text-white grow'href="#home">
-                <img src={Logo} alt="logo" className='h3' />
+            <Navbar.Brand  className='f2 text-white grow'>
+            <img src={Logo} alt="logo" className='h3' />
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">    
@@ -71,10 +72,10 @@ function Navigation({isLoggedIn, setIsLoggedIn}) {
                      <Navbar.Collapse className="justify-content-end">    
                      
                      <Navbar.Text className='text-white pa2'>
-                         <Button variant="outline-success" className='green' onClick={()=>{
+                         <Link to='/login'><Button variant="outline-success" className='green' onClick={()=>{
                              setIsLoggedIn(!isLoggedIn);
-                         }}  >Sign In</Button>
-                         <Button variant="outline-success" className='green'>Register</Button>
+                         }}  >Sign In</Button></Link>
+                         <Link to='/signup'><Button variant="outline-success" className='green'>Register</Button></Link>
                      </Navbar.Text>
                     
                  </Navbar.Collapse>

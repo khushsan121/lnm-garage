@@ -1,4 +1,5 @@
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 import './Footer.css';
 
@@ -8,15 +9,13 @@ function Footer() {
       <div className="content">
         <div>
           <div className="heading">
-            <p>POPULAR LOCATIONS</p>
+            <p>FOLLOW US </p>
           </div>
           <div className="list">
-            <ul>
-              <li>Jaipur</li>
-              <li>Mumbai</li>
-              <li>Chennai</li>
-              <li>Pune</li>
-            </ul>
+            
+              <SocialIcon  className='grow' url="https://www.linkedin.com/in/khushwant-sankhla-86692b200/"/>
+              <SocialIcon className='grow' url="https://www.instagram.com/khushwantsankhla/"/>
+            
           </div>
         </div>
         <div>
