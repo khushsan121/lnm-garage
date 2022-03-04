@@ -2,20 +2,22 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  bottom: 0;
+  font-size: small;
  
 }
 .footerParentDiv .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #002f34;
-  color: whitesmoke;
+  background: #b0b5b6;
+  color: rgb(15, 14, 14);
   padding: 16px;
   
   
 }
 .footerParentDiv .content .heading {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
 }
 
@@ -26,6 +28,7 @@
   padding: 10px;
   background: #002f34;
   color: whitesmoke;
+  font-size: x-small;
   
 }
 

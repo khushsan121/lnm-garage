@@ -10,7 +10,7 @@ function App() {
     document.title = "LNM Garage";
  }, []);
   return (
-    <div >
+    <div className="app">
       <MainRoutes/>
       
     </div>
